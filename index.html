@@ -81,7 +81,7 @@ permalink: /
         </div>
         <div class="row">
             <div class="col">
-                {% if site.name %}<h1 class="text-center font-weight-bold rms-title">{{ site.name }}</h1>{% endif %}
+                {% if site.title %}<h1 class="text-center font-weight-bold rms-title">{{ site.title }}</h1>{% endif %}
                 {% if site.subtitle %}<h3 class="text-center font-weight-light rms-subtitle">{{ site.subtitle }}</h3>{%
                 endif %}
             </div>
@@ -97,10 +97,32 @@ permalink: /
         </div>
 
         <div class="row justify-content-center mt-5">
-            <iframe src="{{ site.spotify.embed.link }}" width="300" height="300" frameborder="0" allowtransparency="true"
-                allow="encrypted-media"></iframe>
+        </div>
+        
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-12 col-xl-4">
+                <iframe src="{{ site.spotify.embed.link }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="col-md-6 col-xl-4 mt-3 mt-md-0">
+                <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/ramastons">Tweets by ramastons</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <div class="col-md-6 col-xl-4 mt-3 mt-md-0">
+                <div class="fb-page w-100" data-href="https://www.facebook.com/ramastons" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ramastons" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ramastons">Ramastons</a></blockquote></div>
+            </div>
         </div>
     </div>
+
+    
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ca_ES/sdk.js#xfbml=1&version=v2.8";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 

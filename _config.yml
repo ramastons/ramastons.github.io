@@ -12,11 +12,9 @@ sass:
 # When modifying this file, take care to preserve the indentation. This is YAML ...
 
 # Main Headline, name required, subtitle optional
-name: 
-subtitle:
-
-# Title attribute of HTML Page, uses 'name' from above if empty
+name: Ramastons Rock Band
 title:
+subtitle:
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
