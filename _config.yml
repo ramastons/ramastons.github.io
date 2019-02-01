@@ -1,0 +1,73 @@
+# Fuse Core Theme for Jekyll - Settings
+# https://github.com/tsjensen/fuse-core
+
+markdown: kramdown
+permalink: pretty
+exclude: ['README.*', 'LICENSE.txt']
+sass:
+    style: expanded
+
+
+# CAUTION
+# When modifying this file, take care to preserve the indentation. This is YAML ...
+
+# Main Headline, name required, subtitle optional
+name: 
+subtitle:
+
+# Title attribute of HTML Page, uses 'name' from above if empty
+title:
+
+# Information for web crawlers / Google, all of them optional
+# 'description' and 'keywords' simply set the corresponding meta tags,
+# 'crawl' is the 'Robots' tag http://www.robotstxt.org/meta.html
+robots:
+    description: Ramastons, a rock band based in Catalonia, Spain
+    keywords: rock, band, ramastons, feel alive, we believe this can be won, fender, telecaster, gibson, les paul
+    crawl: index,follow
+
+# website address when deployed, also given as canonical link
+url: http://www.ramastons.com/
+
+# The 'baseurl' is prepended to all website-internal links.
+# 'baseurl' will often be '', but for a project page on gh-pages, it needs to be the project name.
+# If not empty, be careful to keep the leading slash, and don't add a slash at the end.
+baseurl: ''
+
+# Enable Google Analytics. Leave empty (just "ga:" with subitems commented out) to disable.
+# In order to comply with EU cookie law, enable 'cookieconsent' to show a little popup asking users to acknowledge the GA cookies.
+# Also, some places require you to anonymize the users' IPs, which can be enabled via 'anonymizeip' below. You normally want that.
+# https://support.google.com/analytics/answer/2763052
+#ga:
+ga:
+    account: 'UA-63792232-1'
+    cookieconsent: true
+    anonymizeip: true
+
+
+# A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
+avatar: 'images/avatar.svg'
+
+
+# All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
+# The order of this list controls the order of the links on the page. Feel free to add.
+links:
+  - spotify:
+      name: Spotify
+      show: true
+      href: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
+      icon: fab fa-spotify
+  - twitter:
+      name: Twitter
+      show: true
+      href: https://twitter.com/ramastons
+      icon: fab fa-twitter
+  - facebook:
+      name: Facebook
+      show: true
+      href: https://facebook.com/ramastons
+      icon: fab fa-facebook
+
+spotify:
+    embed:
+        link: https://open.spotify.com/embed/album/0kXGMndRGf5ZHH0ydAJswh
