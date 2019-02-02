@@ -14,7 +14,7 @@ git commit -m "gh-pages deployment"
 
 # Upload site to github
 git remote add origin https://github.com/ramastons/web.git
-git push origin gh-pages:gh-pages
+git push origin gh-pages:gh-pages -f
 
 # Return to path and clean up
 cd ../www.ramastons.com
