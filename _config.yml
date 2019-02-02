@@ -1,15 +1,9 @@
-# Fuse Core Theme for Jekyll - Settings
-# https://github.com/tsjensen/fuse-core
-
 markdown: kramdown
 permalink: pretty
-exclude: ['README.*', 'LICENSE.txt']
+exclude: ['README.*', 'LICENSE.txt', 'deploy.ps1', 'Gemfile', 'Gemfile.lock']
 sass:
     style: expanded
 
-
-# CAUTION
-# When modifying this file, take care to preserve the indentation. This is YAML ...
 
 # Main Headline, name required, subtitle optional
 name: Ramastons Rock Band
@@ -42,10 +36,8 @@ ga:
     cookieconsent: true
     anonymizeip: true
 
-
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
 avatar: 'images/avatar.svg'
-
 
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
