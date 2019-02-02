@@ -1,21 +1,34 @@
 markdown: kramdown
 permalink: pretty
-exclude: ['README.*', 'LICENSE.txt', 'deploy.ps1', 'Gemfile', 'Gemfile.lock']
-sass:
-    style: expanded
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.*
+  - CNAME
+  - deploy.ps1
 
+sass:
+    style: compressed
+    #style: expanded
+
+# https://help.github.com/articles/repository-metadata-on-github-pages/
+github: [metadata]
+repository: ramastons/web
 
 # Main Headline, name required, subtitle optional
 name: Ramastons Rock Band
-title:
+description: Ramastons website, a rock band based in El Vendrell, Tarragona
+
+title: Ramastons
 subtitle:
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
 # 'crawl' is the 'Robots' tag http://www.robotstxt.org/meta.html
 robots:
-    description: Ramastons, a rock band based in Catalonia, Spain
-    keywords: rock, band, ramastons, feel alive, we believe this can be won, fender, telecaster, gibson, les paul
+    description: Ramastons, a rock band based in El Vendrell, Tarragona
+    keywords: rock, band, ramastons, el vendrell, tarragona, barcelona, feel alive, we believe this can be won, fender, telecaster, gibson, les paul
     crawl: index,follow
 
 # website address when deployed, also given as canonical link
