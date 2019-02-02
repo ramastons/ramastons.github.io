@@ -61,3 +61,5 @@ links:
 spotify:
     embed:
         link: https://open.spotify.com/embed/album/0kXGMndRGf5ZHH0ydAJswh
+    artist:
+        link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc

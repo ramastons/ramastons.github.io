@@ -32,12 +32,16 @@ html {
 
 /* --------- Avatar ---------------------------------------------------------------------------- */
 
-.avatar {
+.rms-avatar {
     height: 180px;
     border-radius: 100%;
     box-shadow: 0 3px 10px 2px #00000052;
+    transition: all .5s ease-in;
 }
 
+.rms-avatar:hover {
+    border-radius: 0;
+}
 
 /* --------- Title / Subtitle ------------------------------------------------------------------ */
 
