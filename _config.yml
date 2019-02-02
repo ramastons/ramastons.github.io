@@ -71,8 +71,30 @@ links:
       href: https://facebook.com/ramastons
       icon: fab fa-facebook
 
+youtube:
+    embed:
+        link: //www.youtube.com/embed/B-8tJ-1toBY
+
 spotify:
     embed:
         link: https://open.spotify.com/embed/album/0kXGMndRGf5ZHH0ydAJswh
     artist:
         link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
+
+carousel:
+    - 
+        image: images/banners/spotify-feel-alive-promo.png
+        link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
+        description: Ramastons on Spotify
+    -
+        image: images/banners/itunes-feel-alive-promo.png
+        link: https://itunes.apple.com/es/album/feel-alive/id897965083
+        description: Ramastons on Apple Music
+    -
+        image: images/banners/google-play-feel-alive-promo.png
+        link: https://play.google.com/store/music/artist/Ramastons?id=Aqr6nsnz7qwj7e22crwbdf6pspa&hl=ca
+        description: Ramastons on Google Play
+    -
+        image: images/banners/facebook-ramastons-promo.png
+        link: https:/facebook.com/ramastons
+        description: Ramastons Facebook
