@@ -98,3 +98,8 @@ carousel:
         image: images/banners/facebook-ramastons-promo.png
         link: https:/facebook.com/ramastons
         description: Ramastons Facebook
+
+collections:
+  pages:
+    output: true
+    permalink: /:path

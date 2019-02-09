@@ -7,69 +7,41 @@ permalink: /
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <title>{% if site.title %}{{ site.title }}{% else %}{{ site.name }}{% endif %}</title>
-    <meta name="JekyllTheme" content="Fuse Core by Thomas Jensen" />
+    
     {% if site.robots.description %}
-    <meta name="Description" content="{{ site.robots.description }}" />{% endif %}
+    <meta name="Description" content="{{ site.robots.description }}" />
+    {% endif %}
+    
     {% if site.robots.keywords %}
-    <meta name="Keywords" content="{{ site.robots.keywords }}" />{% endif %}
+    <meta name="Keywords" content="{{ site.robots.keywords }}" />
+    {% endif %}
     {% if site.robots.crawl %}
-    <meta name="Robots" content="{{ site.robots.crawl }}" />{% endif %}
+    <meta name="Robots" content="{{ site.robots.crawl }}" />
+    {% endif %}
+    
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     {% if site.url %}
     <link rel="canonical" href="{{ site.url }}">{% endif %}
-    {% include analytics.html %}
-
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="{{ site.baseurl }}/images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#850505">
-    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#850505">
+    
+    
+    {% include favicons.html %}
 
     <script type="text/javascript" src="{{ site.baseurl }}/js/common.js"></script>
 
     <!-- Stylesheets -->
     {% comment %} Bootstrap should be the first stylesheet {% endcomment %}
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/theme.css">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp">
+    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/styles.css">
+    <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
 
-    {% if site.ga and site.ga.cookieconsent %}
-    <!-- Cookie Consent popup to comply with EU cookie law -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
-        integrity="sha256-ebN46PPB/s45oUcqLn2SCrgOtYgVJaFiLZ26qVSqI8M=" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" integrity="sha256-y0EpKQP2vZljM73+b7xY4dvbYQkHRQXuPqRjc7sjvnA="
-        crossorigin="anonymous"></script>
-    <script>
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise({
-                "cookie": { "expiryDays": 730 },
-                "palette": {
-                    "popup": { "background": "#383b75" },
-                    "button": { "background": "#f1d600" }
-                },
-                "theme": "classic"
-            });
-        });
-    </script>
-    {% endif %}
+    {% include analytics.html %}
+    {% include cookieconsent.html %}
+    
 </head>
 
 <body class="fullscreen-background">
@@ -77,7 +49,8 @@ permalink: /
     <div class="container rms-content pb-4">
 
         <div class="row pt-sm-4">
-            <div class="col text-center"><img class="rms-avatar my-3 my-sm-4" alt="{{ site.name }}" src="{% if site.avatar %}{% if site.avatar contains '://' %}{{ site.avatar }}{%
+            <div class="col text-center">
+                <img class="rms-avatar my-3 my-sm-4" alt="{{ site.name }}" src="{% if site.avatar %}{% if site.avatar contains '://' %}{{ site.avatar }}{%
     else %}{{ site.baseurl }}/{{ site.avatar }}{% endif %}{%
     else %}{{ site.baseurl }}/images/avatar.svg{% endif %}"></div>
         </div>
@@ -99,51 +72,7 @@ permalink: /
         </div>
 
         <div class="row justify-content-center mt-5 carousel-container">
-            <div class="carousel">
-
-                <div data-am-fadeshow="next-prev-navigation">
-                    {% for item in site.carousel %}
-                        <input type="radio" class="js-carousel-option" name="css-fadeshow" id="slide-{{ forloop.index }}" value="{{ forloop.index }}" />
-                    {% endfor %}
-
-                    <!-- Slides -->
-                    <div class="fs-slides">
-                        {% for item in site.carousel %}
-                            <a class="fs-slide"
-                                href="{{ item.link }}">
-                                <img src="{{ site.baseurl }}/{{item.image}}" alt="{{item.description}}"
-                                class="w-100">
-                            </a>
-                            <!-- <a class="fs-slide" 
-                                href="{{ item.link }}"
-                                style="background-image: url('{{ site.baseurl }}/{{item.image}}')">
-                            </a> -->
-                        {% endfor %}
-                    </div>
-
-                    <!-- Quick Navigation -->
-                    <div class="fs-quick-nav">
-                        {% for item in site.carousel %}
-                            <label class="fs-quick-btn" for="slide-{{ forloop.index }}"></label>
-                        {% endfor %}
-                    </div>
-
-                    <!-- Prev Navigation -->
-                    <div class="fs-prev-nav">
-                        {% for item in site.carousel %}
-                            <label class="fs-prev-btn" for="slide-{{ forloop.index }}"></label>
-                        {% endfor %}
-                    </div>
-
-                    <!-- Next Navigation -->
-                    <div class="fs-next-nav">
-                        {% for item in site.carousel %}
-                            <label class="fs-next-btn" for="slide-{{ forloop.index }}"></label>
-                        {% endfor %}
-                    </div>
-                </div>
-
-            </div>
+            {% include carousel.html %}
         </div>
 
         <div class="row justify-content-center mt-5">
@@ -152,32 +81,36 @@ permalink: /
 
         <div class="row justify-content-center mt-5">
             <div class="col-md-12 col-xl-4">
-                <iframe src="{{ site.spotify.embed.link }}" width="100%" height="300" frameborder="0" allowtransparency="true"
-                    allow="encrypted-media"></iframe>
+                <iframe src="{{ site.spotify.embed.link }}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
             <div class="col-md-6 col-xl-4 mt-3 mt-md-0">
-                <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/ramastons">Tweets
-                    by ramastons</a>
+                <a class="twitter-timeline" data-height="500" data-theme="light" href="{{site.links.twitter.href}}">Tweets by {{site.name}}</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
             </div>
             <div class="col-md-6 col-xl-4 mt-3 mt-md-0">
-                <div class="fb-page" data-href="https://www.facebook.com/ramastons" data-tabs="timeline"
-                    data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
-                    data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/ramastons" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ramastons">Ramastons</a></blockquote>
-                </div>
+                <div class="fb-page" data-href="{{site.links.facebook.href}}" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="{{site.links.facebook.href}}" class="fb-xfbml-parse-ignore"><a href="{{site.links.facebook.href}}">{{site.name}}</a></blockquote></div>
             </div>
         </div>
 
+        {% for category in site.categories %}
+        <h3>{{ category[0] }}</h3>
+        <ul>
+            {% for post in category[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+
+        <!-- fb includes -->
         <div id="fb-root"></div>
-        <script>(function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/ca_ES/sdk.js#xfbml=1&version=v2.8";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ca_ES/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 

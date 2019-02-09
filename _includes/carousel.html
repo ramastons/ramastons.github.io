@@ -1,0 +1,44 @@
+<div class="carousel">
+    <div data-am-fadeshow="next-prev-navigation">
+        {% for item in site.carousel %}
+            <input type="radio" class="js-carousel-option" name="css-fadeshow" id="slide-{{ forloop.index }}" value="{{ forloop.index }}" />
+        {% endfor %}
+
+        <!-- Slides -->
+        <div class="fs-slides">
+            {% for item in site.carousel %}
+                <a class="fs-slide"
+                    href="{{ item.link }}">
+                    <img src="{{ site.baseurl }}/{{item.image}}" alt="{{item.description}}"
+                    class="w-100">
+                </a>
+                <!-- <a class="fs-slide" 
+                    href="{{ item.link }}"
+                    style="background-image: url('{{ site.baseurl }}/{{item.image}}')">
+                </a> -->
+            {% endfor %}
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="fs-quick-nav">
+            {% for item in site.carousel %}
+                <label class="fs-quick-btn" for="slide-{{ forloop.index }}"></label>
+            {% endfor %}
+        </div>
+
+        <!-- Prev Navigation -->
+        <div class="fs-prev-nav">
+            {% for item in site.carousel %}
+                <label class="fs-prev-btn" for="slide-{{ forloop.index }}"></label>
+            {% endfor %}
+        </div>
+
+        <!-- Next Navigation -->
+        <div class="fs-next-nav">
+            {% for item in site.carousel %}
+                <label class="fs-next-btn" for="slide-{{ forloop.index }}"></label>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
