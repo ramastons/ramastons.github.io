@@ -8,7 +8,7 @@ html {
 }
 
 .fullscreen-background {
-    background: url("../images/background.jpg") no-repeat center center fixed; 
+    background: url("../images/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,10 +42,6 @@ html {
 /* --------- Title / Subtitle ------------------------------------------------------------------ */
 
 .rms-title {
-    letter-spacing: 0.1em;
-    @media (max-width: 575.98px) {  /* used on bootstrap size 'xs' */
-        letter-spacing: 0;
-    }
     font-size: 3em;
 }
 
