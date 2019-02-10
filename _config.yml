@@ -7,10 +7,15 @@ exclude:
   - README.*
   - CNAME
   - deploy.ps1
+  - run.ps1
+  - .editorconfig
 
 sass:
     style: compressed
     #style: expanded
+
+languages: ["ca", "es", "en"]
+default_lang: "ca"
 
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 github: [metadata]
@@ -50,7 +55,7 @@ ga:
     anonymizeip: true
 
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
-avatar: 'images/avatar.svg'
+avatar: 'assets/images/avatar.svg'
 
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
@@ -82,20 +87,20 @@ spotify:
         link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
 
 carousel:
-    - 
-        image: images/banners/spotify-feel-alive-promo.png
+    -
+        image: assets/images/banners/spotify-feel-alive-promo.png
         link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
         description: Ramastons on Spotify
     -
-        image: images/banners/itunes-feel-alive-promo.png
+        image: assets/images/banners/itunes-feel-alive-promo.png
         link: https://itunes.apple.com/es/album/feel-alive/id897965083
         description: Ramastons on Apple Music
     -
-        image: images/banners/google-play-feel-alive-promo.png
+        image: assets/images/banners/google-play-feel-alive-promo.png
         link: https://play.google.com/store/music/artist/Ramastons?id=Aqr6nsnz7qwj7e22crwbdf6pspa&hl=ca
         description: Ramastons on Google Play
     -
-        image: images/banners/facebook-ramastons-promo.png
+        image: assets/images/banners/facebook-ramastons-promo.png
         link: https:/facebook.com/ramastons
         description: Ramastons Facebook
 
