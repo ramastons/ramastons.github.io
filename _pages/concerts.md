@@ -5,8 +5,6 @@ lang: ca
 ref: concerts
 ---
 
-# Concerts
-
-| Lloc                                      | Dia           | Preu              |
-|-------------------------------------------|---------------|-------------------|
-| La Cantera Biker                          | 02-02-2019    | Entrada lliure    |
+| Lloc                                      | Dia                       | Preu              |
+|-------------------------------------------|---------------------------|-------------------|
+| La Cantera Biker                          | 02-Feb-2019 @ 20h         | Entrada lliure    |

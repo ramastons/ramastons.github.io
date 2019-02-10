@@ -1,0 +1,15 @@
+<ul class="rms-lang_selector">
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+  {% for post in posts %}
+  <li>
+    <a href="{{ post.url }}" class="rms-lang_selector-link {{ post.lang }}">{{ post.lang }}</a>
+  </li>
+  {% endfor %}
+
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+  {% for page in pages %}
+  <li>
+    <a href="{{ page.url }}" class="rms-lang_selector-link {{ page.lang }}">{{ page.lang }}</a>
+  </li>
+  {% endfor %}
+</ul>

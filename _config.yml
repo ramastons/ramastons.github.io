@@ -11,11 +11,8 @@ exclude:
   - .editorconfig
 
 sass:
-    style: compressed
-    #style: expanded
-
-languages: ["ca", "es", "en"]
-default_lang: "ca"
+  style: compressed
+  #style: expanded
 
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 github: [metadata]
@@ -32,9 +29,9 @@ subtitle:
 # 'description' and 'keywords' simply set the corresponding meta tags,
 # 'crawl' is the 'Robots' tag http://www.robotstxt.org/meta.html
 robots:
-    description: Ramastons, a rock band based in El Vendrell, Tarragona
-    keywords: rock, band, ramastons, el vendrell, tarragona, barcelona, feel alive, we believe this can be won, fender, telecaster, gibson, les paul
-    crawl: index,follow
+  description: Ramastons, a rock band based in El Vendrell, Tarragona
+  keywords: rock, band, ramastons, el vendrell, tarragona, barcelona, feel alive, we believe this can be won, fender, telecaster, gibson, les paul
+  crawl: index,follow
 
 # website address when deployed, also given as canonical link
 url: http://www.ramastons.com/
@@ -50,59 +47,59 @@ baseurl: ''
 # https://support.google.com/analytics/answer/2763052
 #ga:
 ga:
-    account: 'UA-63792232-1'
-    cookieconsent: true
-    anonymizeip: true
+  account: 'UA-63792232-1'
+  cookieconsent: true
+  anonymizeip: true
 
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
-avatar: 'assets/images/avatar.svg'
+avatar: '/assets/images/avatar.svg'
 
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
 links:
   - spotify:
-      name: Spotify
-      show: true
-      href: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
-      icon: fab fa-spotify
+    name: Spotify
+    show: true
+    href: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
+    icon: fab fa-spotify
   - twitter:
-      name: Twitter
-      show: true
-      href: https://twitter.com/ramastons
-      icon: fab fa-twitter
+    name: Twitter
+    show: true
+    href: https://twitter.com/ramastons
+    icon: fab fa-twitter
   - facebook:
-      name: Facebook
-      show: true
-      href: https://facebook.com/ramastons
-      icon: fab fa-facebook
+    name: Facebook
+    show: true
+    href: https://facebook.com/ramastons
+    icon: fab fa-facebook
 
 youtube:
-    embed:
-        link: //www.youtube.com/embed/B-8tJ-1toBY
+  embed:
+    link: //www.youtube.com/embed/B-8tJ-1toBY
 
 spotify:
-    embed:
-        link: https://open.spotify.com/embed/album/0kXGMndRGf5ZHH0ydAJswh
-    artist:
-        link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
+  embed:
+    link: https://open.spotify.com/embed/album/0kXGMndRGf5ZHH0ydAJswh
+  artist:
+    link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
 
 carousel:
-    -
-        image: assets/images/banners/spotify-feel-alive-promo.png
-        link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
-        description: Ramastons on Spotify
-    -
-        image: assets/images/banners/itunes-feel-alive-promo.png
-        link: https://itunes.apple.com/es/album/feel-alive/id897965083
-        description: Ramastons on Apple Music
-    -
-        image: assets/images/banners/google-play-feel-alive-promo.png
-        link: https://play.google.com/store/music/artist/Ramastons?id=Aqr6nsnz7qwj7e22crwbdf6pspa&hl=ca
-        description: Ramastons on Google Play
-    -
-        image: assets/images/banners/facebook-ramastons-promo.png
-        link: https:/facebook.com/ramastons
-        description: Ramastons Facebook
+  -
+    image: assets/images/banners/spotify-feel-alive-promo.png
+    link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
+    description: Ramastons on Spotify
+  -
+    image: assets/images/banners/itunes-feel-alive-promo.png
+    link: https://itunes.apple.com/es/album/feel-alive/id897965083
+    description: Ramastons on Apple Music
+  -
+    image: assets/images/banners/google-play-feel-alive-promo.png
+    link: https://play.google.com/store/music/artist/Ramastons?id=Aqr6nsnz7qwj7e22crwbdf6pspa&hl=ca
+    description: Ramastons on Google Play
+  -
+    image: assets/images/banners/facebook-ramastons-promo.png
+    link: https:/facebook.com/ramastons
+    description: Ramastons Facebook
 
 collections:
   pages:

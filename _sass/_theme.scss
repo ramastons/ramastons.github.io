@@ -87,3 +87,15 @@ html {
         }
     }
 }
+
+.rms-lang_selector {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &-link {
+    padding: 0 .3rem;
+    color: white;
+  }
+}
