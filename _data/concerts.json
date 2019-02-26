@@ -1,0 +1,254 @@
+[
+  {
+    "day": "2018-02-02",
+    "time": "20:00h",
+    "title": "Concentració Invernal X ed.",
+    "place": "La Cantera Biker Bar, Bellvei",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2017-09-09",
+    "time": "23:30h",
+    "title": "Festa 20è aniversari del Tallot",
+    "place": "Plaça Nova, El Vendrell",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2016-11-19",
+    "time": "20:00h",
+    "title": "Concert Solidari Marató",
+    "place": "Sala Toman, Reus",
+    "ticket": "Entrada 7€ (amb consumició)."
+  },
+  {
+    "day": "2016-10-15",
+    "time": "22:00h",
+    "title": "Fira de Santa Teresa",
+    "place": "El Vendrell",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2016-09-17",
+    "time": "20:00h",
+    "title": "Mercat Música Viva Vic",
+    "place": "Vic",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2016-08-15",
+    "time": "21:30h",
+    "title": "Foodgoneta",
+    "place": "Sant Salvador (El Vendrell)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2016-05-21",
+    "time": "23:50h",
+    "title": "Mostra de música del BP",
+    "place": "La Bisbal del Penedès",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2016-05-14",
+    "time": "22:30h",
+    "title": "Sala Toman",
+    "place": "Reus",
+    "ticket": "Entrada 8€."
+  },
+  {
+    "day": "2016-04-23",
+    "time": "18:00h",
+    "title": "Dracs 'n Roses",
+    "place": "Sant Joan de les Abadesses",
+    "ticket": "Event"
+  },
+  {
+    "day": "2016-04-08",
+    "time": "21:00h",
+    "title": "El Racó de La Palma",
+    "place": "Passeig Mata, 12, Reus",
+    "ticket": "Consumició mínima 5€. Event"
+  },
+  {
+    "day": "2016-02-26",
+    "time": "23:45h",
+    "title": "Sala Garage",
+    "place": "Salou",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2016-02-11",
+    "time": "15:30h",
+    "title": "FAR '16",
+    "place": "Escola d'Arquitectura de Reus",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2015-10-24",
+    "time": "23:00h",
+    "title": "Concurs de Música de Badalona",
+    "place": "Teatre principal de Badalona",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2015-08-22",
+    "time": "23:45h",
+    "title": "FM d'Igualada - Collon@da",
+    "place": "Igualada",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2015-06-13",
+    "time": "22:00h",
+    "title": "Finalistes Track 2015",
+    "place": "El Vendrell",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2015-06-06",
+    "time": "20:00h",
+    "title": "Shopping Night",
+    "place": "Vilafranca",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2015-05-08",
+    "time": "23:00h",
+    "title": "Final Rockalafell 2015",
+    "place": "Calafell",
+    "ticket": "Entrada 5€"
+  },
+  {
+    "day": "2015-03-21",
+    "time": "20:00h",
+    "title": "Mostra de grups de música del BP",
+    "place": "l'Arboç",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-09-20",
+    "time": "19:30h",
+    "title": "Mercat de la Música Viva, Rambla del Carme",
+    "place": "VIC (Osona)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-07-27",
+    "time": "20:30h",
+    "title": "Concurs Track (pàrquing av. Pèlag)",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-07-12",
+    "time": "23:45h",
+    "title": "FunCable",
+    "place": "L'Arboç (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-06-20",
+    "time": "23:30h",
+    "title": "Pub Rock & Apples",
+    "place": "Calella (Maresme)",
+    "ticket": "Entrada 3€."
+  },
+  {
+    "day": "2014-05-24",
+    "time": "13:00h",
+    "title": "Bar Makinavaja",
+    "place": "BARCELONA (Barcelonès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-05-16",
+    "time": "23:30h",
+    "title": "Rockalafell, Discoteca Déjà vu",
+    "place": "Calafell",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-04-05",
+    "time": "20:00h",
+    "title": "La Puntual",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-03-28",
+    "time": "22:00h",
+    "title": "Bar JamPep",
+    "place": "Badalona",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-03-22",
+    "time": "22:00h",
+    "title": "Furgofell, Plata Les Madrigueres",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2014-03-15",
+    "time": "23:30h",
+    "title": "Bar Totxo SAM",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-11-16",
+    "time": "23:45h",
+    "title": "Festa Tendra, local de fires",
+    "place": "Vila-Rodona (Alt Camp)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-08-02",
+    "time": "23:30h",
+    "title": "Bar Totxo SAM",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-07-05",
+    "time": "23:00h",
+    "title": "Festa Major, Pista poliesportiva",
+    "place": "Banyeres del penedès",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-06-22",
+    "time": "23:30h",
+    "title": "Symposium",
+    "place": "LLORENÇ DEL PENEDÈS (Baix Penedès)",
+    "ticket": "Gratuït"
+  },
+  {
+    "day": "2013-06-01",
+    "time": "21:00h",
+    "title": "La Puntual",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-03-26",
+    "time": "22:00h",
+    "title": "Alfa Bar",
+    "place": "BARCELONA (Barcelonès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-03-15",
+    "time": "23:30h",
+    "title": "Associació 'El Refugi'",
+    "place": "EL VENDRELL (Baix Penedès)",
+    "ticket": "Gratuït."
+  },
+  {
+    "day": "2013-02-15",
+    "time": "23:30h",
+    "title": "Sala 2046",
+    "place": "GRANOLLERS (Vallès Oriental)",
+    "ticket": "Entrada 5€ (consumició inclosa)"
+  }
+]

@@ -1,0 +1,37 @@
+<ul class="rms-tour_event_list">
+  {% assign lastyear = "0000" %}
+
+  {% for concert in site.data.concerts %}
+
+  {% capture year %}{{ concert.day | slice: 0, 4 }}{% endcapture %}
+  {% if year != lastyear %}
+  <li class="rms-tour_event_list-year row">
+    <h3 class="col-sm-12">{{ year }}</h3>
+    {% assign lastyear = year %}
+  </li>
+  {% endif %}
+
+  <li class="tour-event row">
+    <div class="col-sm-2 col-xs-5">
+      <div class="tour-event-day" data-date="{{ concert.day}}">{{ concert.day | date: "%d %b '%y" }}</div>
+      <br class="visible-sm visible-xs" />
+    </div>
+    <div class="col-sm-3 col-xs-7">
+      <div class="tour-event-title">{{ concert.title }}</div>
+      <br class="visible-sm visible-xs" />
+    </div>
+    <div class="col-sm-3">
+      <div class="tour-event-loc">
+        <strong>{{ concert.time }}</strong><br>{{ concert.place }}
+      </div>
+      <br class="visible-sm visible-xs" />
+    </div>
+    <div class="col-sm-4">
+      <div class="tour-event-details">
+        {{ concert.ticket }}
+      </div>
+      <br class="visible-sm visible-xs" />
+    </div>
+  </li>
+  {% endfor %}
+</ul>

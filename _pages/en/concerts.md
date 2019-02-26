@@ -1,6 +1,6 @@
 ---
 layout: tour
-title:  Conciertos
-lang: es
+title:  Concerts
+lang: en
 ref: concerts
 ---
