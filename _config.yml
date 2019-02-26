@@ -89,6 +89,10 @@ carousel:
     link: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
     description: Ramastons on Spotify
   -
+    image: assets/images/banda/ramastons-vinya-1.jpg
+    link: #
+    description: Ramastons
+  -
     image: assets/images/banners/itunes-feel-alive-promo.png
     link: https://itunes.apple.com/es/album/feel-alive/id897965083
     description: Ramastons on Apple Music
@@ -100,6 +104,14 @@ carousel:
     image: assets/images/banners/facebook-ramastons-promo.png
     link: https:/facebook.com/ramastons
     description: Ramastons Facebook
+  -
+    image: assets/images/banda/ramastons-vinya-2.jpg
+    link: #
+    description: Ramastons
+  -
+    image: assets/images/banda/ramastons-vinya-3.jpg
+    link: #
+    description: Ramastons
 
 collections:
   pages:

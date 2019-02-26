@@ -1,4 +1,7 @@
 function initCarousel() {
+  if (!document.querySelector('.js-carousel')) {
+    return;
+  }
   var slideShowSeconds = 5;
   var lastSlide = null;
   setInterval(function () {
