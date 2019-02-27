@@ -1,36 +1,33 @@
-<ul class="rms-tour_event_list">
+<ul class="rms-tourEventList">
   {% assign lastyear = "0000" %}
 
   {% for concert in site.data.concerts %}
 
   {% capture year %}{{ concert.day | slice: 0, 4 }}{% endcapture %}
   {% if year != lastyear %}
-  <li class="rms-tour_event_list-year row">
-    <h3 class="col-sm-12">{{ year }}</h3>
+  <li class="rms-tourEventList__year">
+    {{ year }}
     {% assign lastyear = year %}
   </li>
   {% endif %}
 
-  <li class="tour-event row">
-    <div class="col-sm-2 col-xs-5">
-      <div class="tour-event-day" data-date="{{ concert.day}}">{{ concert.day | date: "%d %b '%y" }}</div>
-      <br class="visible-sm visible-xs" />
+  <li class="rms-tourEvent rms-tourEventList__item">
+    <div class="rms-tourEvent__field rms-tourEvent__day">
+      <div class="u-nowrap" data-date="{{ concert.day}}">{{ concert.day | date: "%d %b '%y" }}</div>
     </div>
-    <div class="col-sm-3 col-xs-7">
-      <div class="tour-event-title">{{ concert.title }}</div>
-      <br class="visible-sm visible-xs" />
+    <div class="rms-tourEvent__field rms-tourEvent__title">
+      <div>{{ concert.title }}</div>
     </div>
-    <div class="col-sm-3">
-      <div class="tour-event-loc">
-        <strong>{{ concert.time }}</strong><br>{{ concert.place }}
+    <div class="rms-tourEvent__field rms-tourEvent__location">
+      <div>
+        <strong>{{ concert.time }}</strong><br />
+        {{ concert.place }}
       </div>
-      <br class="visible-sm visible-xs" />
     </div>
-    <div class="col-sm-4">
-      <div class="tour-event-details">
-        {{ concert.ticket }}
+    <div class="rms-tourEvent__field rms-tourEvent__details">
+      <div>
+        {{ concert.details }}
       </div>
-      <br class="visible-sm visible-xs" />
     </div>
   </li>
   {% endfor %}
