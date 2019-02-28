@@ -1,0 +1,35 @@
+.rms-mainLinks {
+  > div {
+      white-space: nowrap;
+      padding: 0;
+  }
+  a {
+      color: white;
+      border-radius: 100%;
+      border: 2px solid white;
+      display: inline-block;
+      font-size: 1.8em;
+      line-height: 1em;
+      overflow: hidden;
+      @media (max-width: 575.98px) {  /* used on bootstrap size 'xs' */
+          border-radius: 10px;
+          width: 100%;
+      }
+
+      &:hover {
+          text-decoration: none;
+          -webkit-transition: 300ms;
+          -moz-transition: 300ms;
+          transition: 300ms;
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      > i {
+          display: inline-block;
+          margin: 16px 12px;
+      }
+      > span {
+          margin-right: 15px;
+      }
+  }
+}

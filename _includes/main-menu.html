@@ -1,0 +1,23 @@
+
+<div class="row pt-sm-4">
+  <div class="col text-center">
+    <img class="rms-avatar my-3 my-sm-4" alt="{{ site.name }}" src="{{site.avatar}}" />
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col">
+      <h1 class="text-center font-weight-bold rms-title">{{ page.title }}</h1>
+    </div>
+</div> -->
+
+<ul class="rms-mainMenu">
+  {% assign lang=page.lang %}
+  {% assign name=page.title %}
+  {% assign menu=site.data.menu[lang] %}
+  {% for link in menu %}
+  <li class="rms-mainMenu__item {% if link.name == name %} rms-mainMenu__item--active {% endif %}">
+    <a class="rms-mainMenu__link" href="{{link.href}}">{{link.name}}</a>
+  </li>
+  {% endfor %}
+</ul>

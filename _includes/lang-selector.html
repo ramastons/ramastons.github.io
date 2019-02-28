@@ -1,15 +1,23 @@
-<ul class="rms-lang_selector">
+{% assign currentLang=page.lang %}
+
+<ul class="rms-langSelector">
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %}
   <li>
-    <a href="{{ post.url }}" class="rms-lang_selector-link {{ post.lang }}">{{ post.lang }}</a>
+    <a href="{{ post.url }}"
+      class="rms-langSelector__link {{ post.lang }} {% if currentLang == post.lang %}rms-langSelector__link--current{% endif %}">
+      {{ post.lang }}
+    </a>
   </li>
   {% endfor %}
 
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
   {% for page in pages %}
   <li>
-    <a href="{{ page.url }}" class="rms-lang_selector-link {{ page.lang }}">{{ page.lang }}</a>
+    <a href="{{ page.url }}"
+      class="rms-langSelector__link {{ page.lang }} {% if currentLang == page.lang %}rms-langSelector__link--current{% endif %}">
+      {{ page.lang }}
+    </a>
   </li>
   {% endfor %}
 </ul>

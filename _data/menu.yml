@@ -1,0 +1,39 @@
+ca:
+  -
+    name: Inici
+    href: /
+  -
+    name: Concerts
+    href: /concerts
+  -
+    name: Biografia
+    href: /biografia
+  -
+    name: Contacte
+    href: /contacte
+es:
+  -
+    name: Inicio
+    href: /es
+  -
+    name: Conciertos
+    href: /es/conciertos
+  -
+    name: Biografía
+    href: /es/biografia
+  -
+    name: Contacto
+    href: /es/contacto
+en:
+  -
+    name: Home
+    href: /en
+  -
+    name: Concerts
+    href: /en/concerts
+  -
+    name: Bio
+    href: /en/bio
+  -
+    name: Contact
+    href: /en/contact

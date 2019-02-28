@@ -8,34 +8,23 @@
 <body class="fullscreen-background">
   {% include lang-selector.html %}
 
-  <div class="container rms-content pb-4">
+  <div class="rms-page__container pb-4">
 
-    <div class="row pt-sm-4">
-      <div class="col text-center">
-        <img class="rms-avatar my-3 my-sm-4" alt="{{ site.name }}" src="{{site.avatar}}"></div>
-    </div>
+    {% include main-menu.html %}
 
-    <div class="row">
-        <div class="col">
-          <h1 class="text-center font-weight-bold rms-title">{{ page.title }}</h1>
-        </div>
-    </div>
-
-    <div class="row justify-content-center rms-links pt-1 pt-sm-2">
-      {% for hash in site.links %}
-      {% for linkInfo in hash %}
-      {% if linkInfo[1].show %}
+    <div class="row justify-content-center rms-mainLinks pt-1 pt-sm-2">
+      {% for link in site.links %}
+      {% if link.show %}
       <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center">
-        <a href="{{ linkInfo[1].href }}" title="{{ 'Go to ' | append: linkInfo[1].name }}" {% if site.ga %}
-          onclick="trackOutboundLink('{{ linkInfo[1].name }}', '{{ linkInfo[1].href }}'); return false;" {% endif %}>
-          <i class="{{ linkInfo[1].icon }} fa-fw"></i>
+        <a href="{{ link.href }}" title="{{ 'Go to ' | append: link.name }}" {% if site.ga %}
+          onclick="trackOutboundLink('{{ link.name }}', '{{ link.href }}'); return false;" {% endif %}>
+          <i class="{{ link.icon }} fa-fw"></i>
           <span class="d-inline d-sm-none">
-            {{ linkInfo[1].name }}
+            {{ link.name }}
           </span>
         </a>
       </div>
       {% endif %}
-      {% endfor %}
       {% endfor %}
     </div>
 

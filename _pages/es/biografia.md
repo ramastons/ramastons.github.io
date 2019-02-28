@@ -12,13 +12,19 @@ Des de sus orígenes, la banda ha querido buscar una nueva experiencia dentro de
 
 El año 2014, Ramastons publica su disco de debut “Feel Alive”.
 
-Sentimiento, energía e inconformismo son tres elementos esenciales que identifican a la banda y que se revelan en sus canciones.
+> Sentimiento, energía e inconformismo son tres elementos esenciales que identifican a la banda y que se revelan en sus canciones.
 
 En julio de 2014, la banda fue premiada como “Mejor banda del Baix Penedès” en el concurso musical Track El Vendrell.
 
+![Ramastons al TRACK](/assets/images/banda/ramastons-track-2014.png)
+
 Durante septiembre de 2014, se incorporó un nuevo batería a la banda, Marc Muñoz, después de la ida de Albert Garriga para buscar nuevos proyectos personales.
 
-El año 2015, aunque la banda ha estado presente en diferentes escenarios, como la Fiesta Mayor de Igualada, ha encontrado el tiempo de empezar un nuevo proyecto que espera concluir en 2017 en forma de un nuevo disco.
+El año 2015, aunque la banda ha estado presente en diferentes escenarios, como la Fiesta Mayor de Igualada, y continúa desarrollando nuevas composiciones.
+
+El año 2019, el grupo espera lanzar su siguiente trabajo.
+
+![Ramastons banda](/assets/images/banda/ramastons-vinya-3.jpg)
 
 **Joan Jané**, voz principal y guitarra
 
