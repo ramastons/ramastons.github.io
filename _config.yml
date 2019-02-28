@@ -57,17 +57,17 @@ avatar: '/assets/images/avatar.svg'
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
 links:
-  - :
+  -
     name: Spotify
     show: true
     href: https://open.spotify.com/artist/2be6NKWy1BnDea4eenXNQc
     icon: fab fa-spotify
-  - :
+  -
     name: Twitter
     show: true
     href: https://twitter.com/ramastons
     icon: fab fa-twitter
-  - :
+  -
     name: Facebook
     show: true
     href: https://facebook.com/ramastons
