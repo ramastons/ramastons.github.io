@@ -1,0 +1,10 @@
+.rms-avatar {
+  height: 11.25rem;
+  border-radius: 100%;
+  box-shadow: 0 3px 10px 2px #00000052;
+  transition: all .5s ease-in;
+
+  &:hover {
+    border-radius: 0;
+  }
+}

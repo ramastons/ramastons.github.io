@@ -12,21 +12,7 @@
 
     {% include main-menu.html %}
 
-    <div class="row justify-content-center rms-mainLinks pt-1 pt-sm-2">
-      {% for link in site.links %}
-      {% if link.show %}
-      <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center">
-        <a href="{{ link.href }}" title="{{ 'Go to ' | append: link.name }}" {% if site.ga %}
-          onclick="trackOutboundLink('{{ link.name }}', '{{ link.href }}'); return false;" {% endif %}>
-          <i class="{{ link.icon }} fa-fw"></i>
-          <span class="d-inline d-sm-none">
-            {{ link.name }}
-          </span>
-        </a>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
+    {% include featured-links.html %}
 
     <div class="row justify-content-center mt-5 carousel-container">
       {% include widgets/carousel.html %}
