@@ -1,8 +1,8 @@
-<div class="rms-featureLinks pt-1 pt-sm-2 row justify-content-center">
+<div class="rms-featuredLinks pt-1 pt-sm-2 row justify-content-center">
   {% for link in site.links %}
   {% if link.show %}
-  <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center rms-featureLinks__item">
-    <a class="rms-featureLinks__link" href="{{ link.href }}" title="{{ 'Go to ' | append: link.name }}" {% if site.ga %}
+  <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center rms-featuredLinks__item">
+    <a class="rms-featuredLinks__link" href="{{ link.href }}" title="{{ 'Go to ' | append: link.name }}" {% if site.ga %}
       onclick="trackOutboundLink('{{ link.name }}', '{{ link.href }}'); return false;" {% endif %}>
       <i class="{{ link.icon }} fa-fw"></i>
       <span class="d-inline d-sm-none">

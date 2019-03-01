@@ -1,4 +1,4 @@
-.rms-featureLinks {
+.rms-featuredLinks {
   display: flex;
 
   &__item {
@@ -21,6 +21,7 @@
     }
 
     &:hover {
+      color: white;
       text-decoration: none;
       -webkit-transition: 300ms;
       -moz-transition: 300ms;

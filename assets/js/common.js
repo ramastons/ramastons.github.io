@@ -1,12 +1,12 @@
-function initCarousel() {
-  if (!document.querySelector('.js-carousel')) {
+function initCarousel(element, slideShowSeconds) {
+  if (!element) {
     return;
   }
-  var slideShowSeconds = 5;
   var lastSlide = null;
+
   setInterval(function () {
-    var slides = document.querySelectorAll('.js-carousel-option').length;
-    var currentSlide = getCurrentSlide();
+    var slides = element.querySelectorAll('.js-carousel-option').length;
+    var currentSlide = getCurrentSlide(element);
     if (lastSlide != null && lastSlide != currentSlide) {
       lastSlide = currentSlide;
       return;
@@ -18,18 +18,19 @@ function initCarousel() {
     }
 
     lastSlide = currentSlide;
-    document.querySelector('.js-carousel-option[value="' + currentSlide + '"]').checked = true
+    element.querySelector('.js-carousel-option[value="' + currentSlide + '"]').checked = true
   }, slideShowSeconds * 1000);
+
+  function getCurrentSlide(element) {
+    var currentSlide = 1;
+    element.querySelectorAll('.js-carousel-option').forEach(function (i) {
+      if (i.checked) {
+        currentSlide = i.value;
+      }
+    });
+    return parseInt(currentSlide);
+  }
 }
 
-function getCurrentSlide() {
-  var currentSlide = 1;
-  document.querySelectorAll('.js-carousel-option').forEach(function (i) {
-    if (i.checked) {
-      currentSlide = i.value;
-    }
-  });
-  return parseInt(currentSlide);
-}
-
-initCarousel();
+var slideShowSeconds = 5;
+initCarousel(document.querySelector('.js-carousel'), slideShowSeconds);
