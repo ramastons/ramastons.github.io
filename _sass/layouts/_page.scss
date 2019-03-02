@@ -1,4 +1,12 @@
 .rms-page {
+  &--backcover {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   &__content {
     background: rgba(9,5,3,0.79);
     padding: 2.5rem;
