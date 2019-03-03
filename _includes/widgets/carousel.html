@@ -9,7 +9,7 @@
     <div class="fs-slides">
       {% for item in site.carousel %}
       <a class="fs-slide" href="{{ item.link }}">
-        <img src="{{ site.baseurl }}/{{item.image}}" alt="{{item.description}}" class="w-100">
+        <img src="{{ site.baseurl }}/{{item.image}}" alt="{{item.description}}" class="w-100 js-slideImage" data-image-index="{{ forloop.index }}">
       </a>
       {% endfor %}
     </div>
