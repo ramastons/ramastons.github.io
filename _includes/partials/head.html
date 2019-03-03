@@ -32,8 +32,15 @@
   integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
 
-<!-- <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css"> -->
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
+
+<script>
+if (!window.Promise) {
+  var s = document.createElement('script');
+  s.src = 'https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.4/es6-shim.min.js';
+  document.head.appendChild(s);
+}
+</script>
 
 {% include partials/favicons.html %}
 {% include partials/analytics.html %}
