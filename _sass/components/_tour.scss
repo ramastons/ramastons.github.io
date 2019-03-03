@@ -1,5 +1,7 @@
+@import "../variables/index";
+
 .rms-tourEventList {
-	background: rgba(9, 5, 3, .79);
+	background: rgba($primary-bg, .79);
 	list-style: none;
   padding: 1.875rem;
 

@@ -1,3 +1,5 @@
+@import "../variables/index";
+
 .rms-mainMenu {
   display: flex;
   list-style: none;
@@ -21,11 +23,11 @@
   }
 
   &__link {
-    color: white;
+    color: $primary-color;
     text-decoration: none;
 
     &:hover {
-      color: white;
+      color: $primary-color;
       text-decoration: underline;
     }
   }

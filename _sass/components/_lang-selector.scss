@@ -1,3 +1,5 @@
+@import "../variables/index";
+
 .rms-langSelector {
   list-style: none;
   margin: 0;
@@ -6,10 +8,10 @@
 
   &__link {
     padding: 0 .3rem;
-    color: white;
+    color: $primary-color;
 
     &:hover {
-      color: white;
+      color: $primary-color;
     }
 
     &--current {

@@ -1,3 +1,5 @@
+@import "../variables/index";
+
 .rms-page {
   &--backcover {
     background: url("../images/background.jpg") no-repeat center center fixed;
@@ -8,7 +10,7 @@
   }
 
   &__content {
-    background: rgba(9,5,3,0.79);
+    background: rgba($primary-bg, .79);
     padding: 2.5rem;
   }
 
@@ -17,7 +19,7 @@
   }
 
   &__container {
-    color: white;
+    color: $primary-color;
     width: 100%;
     padding-right: .9375rem;
     padding-left: .9375rem;

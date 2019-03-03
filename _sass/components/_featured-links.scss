@@ -1,3 +1,5 @@
+@import "../variables/index";
+
 .rms-featuredLinks {
   display: flex;
 
@@ -7,7 +9,7 @@
   }
 
   &__link {
-    color: white;
+    color: $primary-color;
     border-radius: 100%;
     border: 2px solid white;
     display: inline-block;
@@ -21,12 +23,12 @@
     }
 
     &:hover {
-      color: white;
+      color: $primary-color;
       text-decoration: none;
       -webkit-transition: 300ms;
       -moz-transition: 300ms;
       transition: 300ms;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba($primary-bg, 0.5);
     }
 
     > i {

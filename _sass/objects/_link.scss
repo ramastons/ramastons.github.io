@@ -1,7 +1,9 @@
+@import "../variables/index";
+
 a {
-  color: wheat;
+  color: darken($primary-color, 30);
 
   &:hover {
-    color: white;
+    color: $primary-color;
   }
 }
